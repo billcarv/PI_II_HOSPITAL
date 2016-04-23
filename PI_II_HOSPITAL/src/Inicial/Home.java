@@ -1,7 +1,8 @@
 package Inicial;
 
-import Agendamento.agdAgenda;
-import Consultas.cstCliente;
+import Agendamento.agdAgendamento;
+import Consultas.cstClientes;
+import Consultas.cstMedicos;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -80,6 +81,11 @@ public class Home extends javax.swing.JFrame {
         jMenu4.setText("Agendamentos");
 
         jMenuItem2.setText("Medicos");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
         jMenu4.add(jMenuItem2);
 
         jMenuItem3.setText("Cliente");
@@ -192,7 +198,7 @@ public class Home extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        cstCliente form = new cstCliente();
+        cstClientes form = new cstClientes();
         form.setVisible(true);    
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
@@ -201,9 +207,14 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem3MouseClicked
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
-        agdAgenda form = new agdAgenda();
+        agdAgendamento form = new agdAgendamento();
         form.setVisible(true);
     }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        cstMedicos form = new cstMedicos();
+        form.setVisible(true);
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     /**
      * @param args the command line arguments
