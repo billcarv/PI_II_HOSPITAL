@@ -62,6 +62,7 @@ public class Home extends javax.swing.JFrame {
         jMenuItem19 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jMenu1.setText("Cadastros");
 
@@ -175,7 +176,8 @@ public class Home extends javax.swing.JFrame {
             .addGap(0, 443, Short.MAX_VALUE)
         );
 
-        pack();
+        setSize(new java.awt.Dimension(826, 503));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
