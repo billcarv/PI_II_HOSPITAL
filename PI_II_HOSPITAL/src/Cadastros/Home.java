@@ -1,4 +1,4 @@
-package Janelas;
+package Cadastros;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -28,6 +28,7 @@ public class Home extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jDesktopPane1 = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -35,17 +36,49 @@ public class Home extends javax.swing.JFrame {
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem11 = new javax.swing.JMenuItem();
-        jMenu3 = new javax.swing.JMenu();
+        jMenu5 = new javax.swing.JMenu();
+        jMenuItem21 = new javax.swing.JMenuItem();
+        jMenuItem22 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
+        jMenu6 = new javax.swing.JMenu();
+        jMenuItem7 = new javax.swing.JMenuItem();
         jMenuItem13 = new javax.swing.JMenuItem();
-        jMenuItem9 = new javax.swing.JMenuItem();
+        jMenuItem4 = new javax.swing.JMenuItem();
+        jMenu7 = new javax.swing.JMenu();
         jMenuItem10 = new javax.swing.JMenuItem();
+        jMenuItem9 = new javax.swing.JMenuItem();
+        jMenu3 = new javax.swing.JMenu();
+        jMenuItem20 = new javax.swing.JMenuItem();
+        jMenuItem18 = new javax.swing.JMenuItem();
+        jMenuItem12 = new javax.swing.JMenuItem();
+        jMenuItem6 = new javax.swing.JMenuItem();
+        jMenuItem5 = new javax.swing.JMenuItem();
+        jMenuItem8 = new javax.swing.JMenuItem();
+        jMenuItem14 = new javax.swing.JMenuItem();
+        jMenuItem15 = new javax.swing.JMenuItem();
+        jMenuItem16 = new javax.swing.JMenuItem();
+        jMenuItem17 = new javax.swing.JMenuItem();
+        jMenuItem19 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jDesktopPane1.setBackground(new java.awt.Color(255, 255, 255));
+        jDesktopPane1.setForeground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
+        jDesktopPane1.setLayout(jDesktopPane1Layout);
+        jDesktopPane1Layout.setHorizontalGroup(
+            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 810, Short.MAX_VALUE)
+        );
+        jDesktopPane1Layout.setVerticalGroup(
+            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 443, Short.MAX_VALUE)
+        );
+
         jMenu1.setText("Cadastros");
 
-        jMenuItem1.setText("Cliente");
+        jMenuItem1.setText("Clientes");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem1ActionPerformed(evt);
@@ -55,9 +88,9 @@ public class Home extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
-        jMenu4.setText("Agendamento");
+        jMenu4.setText("Agendamentos");
 
-        jMenuItem2.setText("Medico");
+        jMenuItem2.setText("Medicos");
         jMenu4.add(jMenuItem2);
 
         jMenuItem3.setText("Cliente");
@@ -66,21 +99,79 @@ public class Home extends javax.swing.JFrame {
         jMenuItem11.setText("Unidade");
         jMenu4.add(jMenuItem11);
 
-        jMenuBar1.add(jMenu4);
+        jMenu5.setText("Agenda ");
 
-        jMenu3.setText("Agenda");
-        jMenuBar1.add(jMenu3);
+        jMenuItem21.setText("Agenda Central");
+        jMenu5.add(jMenuItem21);
+
+        jMenuItem22.setText("Agenda da Unidade");
+        jMenu5.add(jMenuItem22);
+
+        jMenu4.add(jMenu5);
+
+        jMenuBar1.add(jMenu4);
 
         jMenu2.setText("Relatorios");
 
-        jMenuItem13.setText("Agendamentos por Unidade");
-        jMenu2.add(jMenuItem13);
+        jMenu6.setText("Agendamentos");
 
-        jMenuItem9.setText("Lista de Espera por Medico");
-        jMenu2.add(jMenuItem9);
+        jMenuItem7.setText("Agendamentos x Data");
+        jMenu6.add(jMenuItem7);
 
-        jMenuItem10.setText("Lista de Espera por Unidade");
-        jMenu2.add(jMenuItem10);
+        jMenuItem13.setText("Agendamentos x Unidades");
+        jMenu6.add(jMenuItem13);
+
+        jMenuItem4.setText("Agendamentos x Clientes");
+        jMenu6.add(jMenuItem4);
+
+        jMenu2.add(jMenu6);
+
+        jMenu7.setText("Listagem de Espera");
+
+        jMenuItem10.setText("Lista Espera x Unidade");
+        jMenu7.add(jMenuItem10);
+
+        jMenuItem9.setText("Lista Espera x Medico");
+        jMenu7.add(jMenuItem9);
+
+        jMenu2.add(jMenu7);
+
+        jMenu3.setText("Rankings");
+
+        jMenuItem20.setText("Ranking por Convênios");
+        jMenu3.add(jMenuItem20);
+
+        jMenuItem18.setText("Ranking por Expedientes");
+        jMenu3.add(jMenuItem18);
+
+        jMenuItem12.setText("Ranking por Especialidades");
+        jMenu3.add(jMenuItem12);
+
+        jMenuItem6.setText("Ranking por Médicos");
+        jMenu3.add(jMenuItem6);
+
+        jMenuItem5.setText("Ranking por Unidade");
+        jMenu3.add(jMenuItem5);
+
+        jMenu2.add(jMenu3);
+
+        jMenuItem8.setText("Historico Pacientes");
+        jMenu2.add(jMenuItem8);
+
+        jMenuItem14.setText("Relação de Clientes");
+        jMenu2.add(jMenuItem14);
+
+        jMenuItem15.setText("Relação de Médicos");
+        jMenu2.add(jMenuItem15);
+
+        jMenuItem16.setText("Relação de Especialidades");
+        jMenu2.add(jMenuItem16);
+
+        jMenuItem17.setText("Relação de Unidades");
+        jMenu2.add(jMenuItem17);
+
+        jMenuItem19.setText("Relação de Convênios");
+        jMenu2.add(jMenuItem19);
 
         jMenuBar1.add(jMenu2);
 
@@ -90,11 +181,13 @@ public class Home extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 746, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 443, Short.MAX_VALUE)
+            .addComponent(jDesktopPane1)
         );
 
         pack();
@@ -141,17 +234,36 @@ public class Home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenu jMenu5;
+    private javax.swing.JMenu jMenu6;
+    private javax.swing.JMenu jMenu7;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem10;
     private javax.swing.JMenuItem jMenuItem11;
+    private javax.swing.JMenuItem jMenuItem12;
     private javax.swing.JMenuItem jMenuItem13;
+    private javax.swing.JMenuItem jMenuItem14;
+    private javax.swing.JMenuItem jMenuItem15;
+    private javax.swing.JMenuItem jMenuItem16;
+    private javax.swing.JMenuItem jMenuItem17;
+    private javax.swing.JMenuItem jMenuItem18;
+    private javax.swing.JMenuItem jMenuItem19;
     private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem20;
+    private javax.swing.JMenuItem jMenuItem21;
+    private javax.swing.JMenuItem jMenuItem22;
     private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JMenuItem jMenuItem6;
+    private javax.swing.JMenuItem jMenuItem7;
+    private javax.swing.JMenuItem jMenuItem8;
     private javax.swing.JMenuItem jMenuItem9;
     // End of variables declaration//GEN-END:variables
 }
