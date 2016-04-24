@@ -70,7 +70,6 @@ public class Home extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("SGA - Sistema de Gerenciamento de Agendamentos");
-        setResizable(false);
 
         jMenuBar1.setName("jfHome"); // NOI18N
 
