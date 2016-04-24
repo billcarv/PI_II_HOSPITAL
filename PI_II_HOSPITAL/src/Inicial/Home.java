@@ -3,6 +3,7 @@ package Inicial;
 import Agendamento.agdAgendamento;
 import Consultas.cstClientes;
 import Consultas.cstMedicos;
+import Consultas.cstUnidades;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -103,11 +104,26 @@ public class Home extends javax.swing.JFrame {
         jMenu4.add(jMenuItem3);
 
         jMenuItem11.setText("Unidade");
+        jMenuItem11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem11ActionPerformed(evt);
+            }
+        });
         jMenu4.add(jMenuItem11);
 
         jMenu5.setText("Agenda ");
+        jMenu5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenu5ActionPerformed(evt);
+            }
+        });
 
         jMenuItem21.setText("Agenda Central");
+        jMenuItem21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem21ActionPerformed(evt);
+            }
+        });
         jMenu5.add(jMenuItem21);
 
         jMenuItem22.setText("Agenda da Unidade");
@@ -211,7 +227,7 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem3MouseClicked
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
-        agdAgendamento form = new agdAgendamento();
+        cstClientes form = new cstClientes();
         form.setVisible(true);
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
@@ -219,6 +235,20 @@ public class Home extends javax.swing.JFrame {
         cstMedicos form = new cstMedicos();
         form.setVisible(true);
     }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
+        cstUnidades obj = new cstUnidades();
+        obj.setVisible(true);
+    }//GEN-LAST:event_jMenuItem11ActionPerformed
+
+    private void jMenu5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu5ActionPerformed
+
+    }//GEN-LAST:event_jMenu5ActionPerformed
+
+    private void jMenuItem21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem21ActionPerformed
+        agdAgendamento obj = new agdAgendamento();
+        obj.setVisible(true);
+    }//GEN-LAST:event_jMenuItem21ActionPerformed
 
     /**
      * @param args the command line arguments
