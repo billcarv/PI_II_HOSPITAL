@@ -64,9 +64,13 @@ public class Home extends javax.swing.JFrame {
         jMenuItem16 = new javax.swing.JMenuItem();
         jMenuItem17 = new javax.swing.JMenuItem();
         jMenuItem19 = new javax.swing.JMenuItem();
+        jMenu8 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("SGA - Sistema de Gerenciamento de Agendamentos");
         setResizable(false);
+
+        jMenuBar1.setName("jfHome"); // NOI18N
 
         jMenu1.setText("Cadastros");
 
@@ -200,6 +204,14 @@ public class Home extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu2);
 
+        jMenu8.setText("Sair");
+        jMenu8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenu8ActionPerformed(evt);
+            }
+        });
+        jMenuBar1.add(jMenu8);
+
         setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -250,6 +262,10 @@ public class Home extends javax.swing.JFrame {
         obj.setVisible(true);
     }//GEN-LAST:event_jMenuItem21ActionPerformed
 
+    private void jMenu8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu8ActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_jMenu8ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -294,6 +310,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenu jMenu6;
     private javax.swing.JMenu jMenu7;
+    private javax.swing.JMenu jMenu8;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem10;

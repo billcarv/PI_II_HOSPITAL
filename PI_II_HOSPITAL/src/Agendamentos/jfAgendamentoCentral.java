@@ -182,7 +182,7 @@ public class jfAgendamentoCentral extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
-
+           dispose();
     }//GEN-LAST:event_jButton3MouseClicked
 
     /**

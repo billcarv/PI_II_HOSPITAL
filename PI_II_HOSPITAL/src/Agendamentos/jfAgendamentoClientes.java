@@ -173,7 +173,7 @@ public class jfAgendamentoClientes extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
-        System.exit(0);
+        dispose();
     }//GEN-LAST:event_jButton3MouseClicked
 
     /**

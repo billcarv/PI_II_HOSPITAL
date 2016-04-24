@@ -102,7 +102,7 @@ public class jfConsultaUnidades extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
-
+        dispose();
     }//GEN-LAST:event_jButton2MouseClicked
 
     /**

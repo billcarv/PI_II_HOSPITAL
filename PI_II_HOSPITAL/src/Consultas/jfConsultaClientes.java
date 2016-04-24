@@ -143,7 +143,7 @@ public class jfConsultaClientes extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2MouseClicked
 
     private void jButton8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton8MouseClicked
-
+        dispose();   
     }//GEN-LAST:event_jButton8MouseClicked
 
     /**
