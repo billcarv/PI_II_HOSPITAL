@@ -1,9 +1,9 @@
 package Inicial;
 
-import Agendamento.agdAgendamento;
-import Consultas.cstClientes;
-import Consultas.cstMedicos;
-import Consultas.cstUnidades;
+import Agendamentos.jfAgendamentoCentral;
+import Consultas.jfConsultaClientes;
+import Consultas.jfConsultaMedicos;
+import Consultas.jfConsultaUnidades;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -218,7 +218,7 @@ public class Home extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        cstClientes form = new cstClientes();
+        jfConsultaClientes form = new jfConsultaClientes();
         form.setVisible(true);    
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
@@ -227,17 +227,17 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem3MouseClicked
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
-        cstClientes form = new cstClientes();
+        jfConsultaClientes form = new jfConsultaClientes();
         form.setVisible(true);
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        cstMedicos form = new cstMedicos();
+        jfConsultaMedicos form = new jfConsultaMedicos();
         form.setVisible(true);
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
-        cstUnidades obj = new cstUnidades();
+        jfConsultaUnidades obj = new jfConsultaUnidades();
         obj.setVisible(true);
     }//GEN-LAST:event_jMenuItem11ActionPerformed
 
@@ -246,7 +246,7 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenu5ActionPerformed
 
     private void jMenuItem21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem21ActionPerformed
-        agdAgendamento obj = new agdAgendamento();
+        jfAgendamentoCentral obj = new jfAgendamentoCentral();
         obj.setVisible(true);
     }//GEN-LAST:event_jMenuItem21ActionPerformed
 

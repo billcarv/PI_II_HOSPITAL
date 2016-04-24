@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Agendamento;
+package Agendamentos;
 
 /**
  *
  * @author willian.carvalho
  */
-public class agdUnidades extends javax.swing.JFrame {
+public class jfAgendamentoUnidades extends javax.swing.JFrame {
 
     /**
      * Creates new form agdClientes
      */
-    public agdUnidades() {
+    public jfAgendamentoUnidades() {
         initComponents();
     }
 
@@ -152,14 +152,18 @@ public class agdUnidades extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(agdUnidades.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(jfAgendamentoUnidades.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(agdUnidades.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(jfAgendamentoUnidades.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(agdUnidades.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(jfAgendamentoUnidades.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(agdUnidades.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(jfAgendamentoUnidades.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -168,7 +172,7 @@ public class agdUnidades extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new agdUnidades().setVisible(true);
+                new jfAgendamentoUnidades().setVisible(true);
             }
         });
     }
