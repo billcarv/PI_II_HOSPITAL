@@ -45,8 +45,9 @@ public class Home extends javax.swing.JFrame {
         jMenu2 = new javax.swing.JMenu();
         jMenu6 = new javax.swing.JMenu();
         jMenuItem7 = new javax.swing.JMenuItem();
-        jMenuItem13 = new javax.swing.JMenuItem();
         jMenuItem4 = new javax.swing.JMenuItem();
+        jMenuItem23 = new javax.swing.JMenuItem();
+        jMenuItem13 = new javax.swing.JMenuItem();
         jMenu7 = new javax.swing.JMenu();
         jMenuItem10 = new javax.swing.JMenuItem();
         jMenuItem9 = new javax.swing.JMenuItem();
@@ -123,11 +124,14 @@ public class Home extends javax.swing.JFrame {
         jMenuItem7.setText("Agendamentos x Data");
         jMenu6.add(jMenuItem7);
 
-        jMenuItem13.setText("Agendamentos x Unidades");
-        jMenu6.add(jMenuItem13);
-
         jMenuItem4.setText("Agendamentos x Clientes");
         jMenu6.add(jMenuItem4);
+
+        jMenuItem23.setText("Agendamento x Medicos");
+        jMenu6.add(jMenuItem23);
+
+        jMenuItem13.setText("Agendamentos x Unidades");
+        jMenu6.add(jMenuItem13);
 
         jMenu2.add(jMenu6);
 
@@ -276,6 +280,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem20;
     private javax.swing.JMenuItem jMenuItem21;
     private javax.swing.JMenuItem jMenuItem22;
+    private javax.swing.JMenuItem jMenuItem23;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
