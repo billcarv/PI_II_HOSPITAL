@@ -4,6 +4,23 @@ import Agendamentos.jfAgendamentoCentral;
 import Consultas.jfConsultaClientes;
 import Consultas.jfConsultaMedicos;
 import Consultas.jfConsultaUnidades;
+import Parametros.jfParamAgClientes;
+import Parametros.jfParamAgData;
+import Parametros.jfParamAgMedicos;
+import Parametros.jfParamAgUnidades;
+import Parametros.jfParamEspMedicos;
+import Parametros.jfParamEspUnidades;
+import Parametros.jfParamHistClientes;
+import Parametros.jfParamListaClientes;
+import Parametros.jfParamListaConvenios;
+import Parametros.jfParamListaEspecialidades;
+import Parametros.jfParamListaMedicos;
+import Parametros.jfParamListaUnidades;
+import Parametros.jfParamRankConvenios;
+import Parametros.jfParamRankEspecialidades;
+import Parametros.jfParamRankExpedientes;
+import Parametros.jfParamRankMedicos;
+import Parametros.jfParamRankUnidades;
 
 /**
  * @author willian.acarvalho
@@ -127,15 +144,35 @@ public class Home extends javax.swing.JFrame {
         jmRelatoriosAgendamentos.setText("Agendamentos");
 
         jmRelatoriosAgendamentosData.setText("Agendamentos x Data");
+        jmRelatoriosAgendamentosData.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmRelatoriosAgendamentosDataActionPerformed(evt);
+            }
+        });
         jmRelatoriosAgendamentos.add(jmRelatoriosAgendamentosData);
 
         jmRelatoriosAgendamentosClientes.setText("Agendamentos x Clientes");
+        jmRelatoriosAgendamentosClientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmRelatoriosAgendamentosClientesActionPerformed(evt);
+            }
+        });
         jmRelatoriosAgendamentos.add(jmRelatoriosAgendamentosClientes);
 
         jmRelatoriosAgendamentosMedicos.setText("Agendamento x Medicos");
+        jmRelatoriosAgendamentosMedicos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmRelatoriosAgendamentosMedicosActionPerformed(evt);
+            }
+        });
         jmRelatoriosAgendamentos.add(jmRelatoriosAgendamentosMedicos);
 
         jmRelatoriosAgendamentosUnidades.setText("Agendamentos x Unidades");
+        jmRelatoriosAgendamentosUnidades.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmRelatoriosAgendamentosUnidadesActionPerformed(evt);
+            }
+        });
         jmRelatoriosAgendamentos.add(jmRelatoriosAgendamentosUnidades);
 
         jmRelatorios.add(jmRelatoriosAgendamentos);
@@ -143,9 +180,19 @@ public class Home extends javax.swing.JFrame {
         jmRelatoriosListagens.setText("Listagem de Espera");
 
         jmRelatoriosListagensUnidades.setText("Lista Espera x Unidade");
+        jmRelatoriosListagensUnidades.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmRelatoriosListagensUnidadesActionPerformed(evt);
+            }
+        });
         jmRelatoriosListagens.add(jmRelatoriosListagensUnidades);
 
         jmRelatoriosListagensMedicos.setText("Lista Espera x Medico");
+        jmRelatoriosListagensMedicos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmRelatoriosListagensMedicosActionPerformed(evt);
+            }
+        });
         jmRelatoriosListagens.add(jmRelatoriosListagensMedicos);
 
         jmRelatorios.add(jmRelatoriosListagens);
@@ -153,38 +200,93 @@ public class Home extends javax.swing.JFrame {
         jmRelatoriosRankings.setText("Rankings");
 
         jmRelatoriosRankingConvenios.setText("Ranking por Convênios");
+        jmRelatoriosRankingConvenios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmRelatoriosRankingConveniosActionPerformed(evt);
+            }
+        });
         jmRelatoriosRankings.add(jmRelatoriosRankingConvenios);
 
         jmRelatoriosRankingExpedientes.setText("Ranking por Expedientes");
+        jmRelatoriosRankingExpedientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmRelatoriosRankingExpedientesActionPerformed(evt);
+            }
+        });
         jmRelatoriosRankings.add(jmRelatoriosRankingExpedientes);
 
         jmRelatoriosRankingEspecialidades.setText("Ranking por Especialidades");
+        jmRelatoriosRankingEspecialidades.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmRelatoriosRankingEspecialidadesActionPerformed(evt);
+            }
+        });
         jmRelatoriosRankings.add(jmRelatoriosRankingEspecialidades);
 
         jmRelatoriosRankingMedicos.setText("Ranking por Médicos");
+        jmRelatoriosRankingMedicos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmRelatoriosRankingMedicosActionPerformed(evt);
+            }
+        });
         jmRelatoriosRankings.add(jmRelatoriosRankingMedicos);
 
         jmRelatoriosRankingUnidades.setText("Ranking por Unidade");
+        jmRelatoriosRankingUnidades.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmRelatoriosRankingUnidadesActionPerformed(evt);
+            }
+        });
         jmRelatoriosRankings.add(jmRelatoriosRankingUnidades);
 
         jmRelatorios.add(jmRelatoriosRankings);
 
         jmRelatoriosHistoricos.setText("Historico Pacientes");
+        jmRelatoriosHistoricos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmRelatoriosHistoricosActionPerformed(evt);
+            }
+        });
         jmRelatorios.add(jmRelatoriosHistoricos);
 
         jmRelatoriosClientes.setText("Relação de Clientes");
+        jmRelatoriosClientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmRelatoriosClientesActionPerformed(evt);
+            }
+        });
         jmRelatorios.add(jmRelatoriosClientes);
 
         jmRelatoriosMedicos.setText("Relação de Médicos");
+        jmRelatoriosMedicos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmRelatoriosMedicosActionPerformed(evt);
+            }
+        });
         jmRelatorios.add(jmRelatoriosMedicos);
 
         jmRelatoriosEspecialidades.setText("Relação de Especialidades");
+        jmRelatoriosEspecialidades.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmRelatoriosEspecialidadesActionPerformed(evt);
+            }
+        });
         jmRelatorios.add(jmRelatoriosEspecialidades);
 
         jmRelatoriosUnidades.setText("Relação de Unidades");
+        jmRelatoriosUnidades.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmRelatoriosUnidadesActionPerformed(evt);
+            }
+        });
         jmRelatorios.add(jmRelatoriosUnidades);
 
         jmRelatoriosConvenios.setText("Relação de Convênios");
+        jmRelatoriosConvenios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmRelatoriosConveniosActionPerformed(evt);
+            }
+        });
         jmRelatorios.add(jmRelatoriosConvenios);
 
         jMenuBar1.add(jmRelatorios);
@@ -259,6 +361,91 @@ public class Home extends javax.swing.JFrame {
     private void jmSairMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jmSairMouseClicked
         System.exit(0);
     }//GEN-LAST:event_jmSairMouseClicked
+
+    private void jmRelatoriosAgendamentosDataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmRelatoriosAgendamentosDataActionPerformed
+        jfParamAgData form = new jfParamAgData();
+        form.setVisible(true);
+    }//GEN-LAST:event_jmRelatoriosAgendamentosDataActionPerformed
+
+    private void jmRelatoriosAgendamentosClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmRelatoriosAgendamentosClientesActionPerformed
+        jfParamAgClientes form = new jfParamAgClientes();
+        form.setVisible(true);
+    }//GEN-LAST:event_jmRelatoriosAgendamentosClientesActionPerformed
+
+    private void jmRelatoriosAgendamentosMedicosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmRelatoriosAgendamentosMedicosActionPerformed
+        jfParamAgMedicos form = new jfParamAgMedicos();
+        form.setVisible(true);
+    }//GEN-LAST:event_jmRelatoriosAgendamentosMedicosActionPerformed
+
+    private void jmRelatoriosAgendamentosUnidadesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmRelatoriosAgendamentosUnidadesActionPerformed
+        jfParamAgUnidades form = new jfParamAgUnidades();
+        form.setVisible(true);
+    }//GEN-LAST:event_jmRelatoriosAgendamentosUnidadesActionPerformed
+
+    private void jmRelatoriosListagensUnidadesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmRelatoriosListagensUnidadesActionPerformed
+        jfParamEspUnidades form = new jfParamEspUnidades();
+        form.setVisible(true);
+    }//GEN-LAST:event_jmRelatoriosListagensUnidadesActionPerformed
+
+    private void jmRelatoriosListagensMedicosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmRelatoriosListagensMedicosActionPerformed
+        jfParamEspMedicos form = new jfParamEspMedicos();
+        form.setVisible(true);
+    }//GEN-LAST:event_jmRelatoriosListagensMedicosActionPerformed
+
+    private void jmRelatoriosRankingConveniosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmRelatoriosRankingConveniosActionPerformed
+        jfParamRankConvenios form = new jfParamRankConvenios();
+        form.setVisible(true);
+    }//GEN-LAST:event_jmRelatoriosRankingConveniosActionPerformed
+
+    private void jmRelatoriosRankingExpedientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmRelatoriosRankingExpedientesActionPerformed
+        jfParamRankExpedientes form = new jfParamRankExpedientes();
+        form.setVisible(true);
+    }//GEN-LAST:event_jmRelatoriosRankingExpedientesActionPerformed
+
+    private void jmRelatoriosRankingEspecialidadesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmRelatoriosRankingEspecialidadesActionPerformed
+        jfParamRankEspecialidades form = new jfParamRankEspecialidades();
+        form.setVisible(true);
+    }//GEN-LAST:event_jmRelatoriosRankingEspecialidadesActionPerformed
+
+    private void jmRelatoriosRankingMedicosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmRelatoriosRankingMedicosActionPerformed
+        jfParamRankMedicos form = new jfParamRankMedicos();
+        form.setVisible(true);
+    }//GEN-LAST:event_jmRelatoriosRankingMedicosActionPerformed
+
+    private void jmRelatoriosRankingUnidadesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmRelatoriosRankingUnidadesActionPerformed
+        jfParamRankUnidades form = new jfParamRankUnidades();
+        form.setVisible(true);
+    }//GEN-LAST:event_jmRelatoriosRankingUnidadesActionPerformed
+
+    private void jmRelatoriosHistoricosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmRelatoriosHistoricosActionPerformed
+        jfParamHistClientes form = new jfParamHistClientes();
+        form.setVisible(true);
+    }//GEN-LAST:event_jmRelatoriosHistoricosActionPerformed
+
+    private void jmRelatoriosClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmRelatoriosClientesActionPerformed
+        jfParamListaClientes form = new jfParamListaClientes();
+        form.setVisible(true);
+    }//GEN-LAST:event_jmRelatoriosClientesActionPerformed
+
+    private void jmRelatoriosMedicosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmRelatoriosMedicosActionPerformed
+        jfParamListaMedicos form = new jfParamListaMedicos();
+        form.setVisible(true);
+    }//GEN-LAST:event_jmRelatoriosMedicosActionPerformed
+
+    private void jmRelatoriosEspecialidadesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmRelatoriosEspecialidadesActionPerformed
+        jfParamListaEspecialidades form = new jfParamListaEspecialidades();
+        form.setVisible(true);
+    }//GEN-LAST:event_jmRelatoriosEspecialidadesActionPerformed
+
+    private void jmRelatoriosUnidadesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmRelatoriosUnidadesActionPerformed
+        jfParamListaUnidades form = new jfParamListaUnidades();
+        form.setVisible(true);
+    }//GEN-LAST:event_jmRelatoriosUnidadesActionPerformed
+
+    private void jmRelatoriosConveniosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmRelatoriosConveniosActionPerformed
+        jfParamListaConvenios form = new jfParamListaConvenios();
+        form.setVisible(true);
+    }//GEN-LAST:event_jmRelatoriosConveniosActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
