@@ -4,10 +4,7 @@ import Agendamentos.jfAgendamentoCentral;
 import Consultas.jfConsultaClientes;
 import Consultas.jfConsultaMedicos;
 import Consultas.jfConsultaUnidades;
-import Parametros.jfParamAgClientes;
-import Parametros.jfParamAgData;
-import Parametros.jfParamAgMedicos;
-import Parametros.jfParamAgUnidades;
+import Parametros.jfParamAgendamentos;
 import Parametros.jfParamEspMedicos;
 import Parametros.jfParamEspUnidades;
 import Parametros.jfParamHistClientes;
@@ -46,11 +43,7 @@ public class Home extends javax.swing.JFrame {
         jmAgendamentosCentral = new javax.swing.JMenuItem();
         jmAgendamentosUnidades = new javax.swing.JMenuItem();
         jmRelatorios = new javax.swing.JMenu();
-        jmRelatoriosAgendamentos = new javax.swing.JMenu();
-        jmRelatoriosAgendamentosData = new javax.swing.JMenuItem();
-        jmRelatoriosAgendamentosClientes = new javax.swing.JMenuItem();
-        jmRelatoriosAgendamentosMedicos = new javax.swing.JMenuItem();
-        jmRelatoriosAgendamentosUnidades = new javax.swing.JMenuItem();
+        jMenuItem1 = new javax.swing.JMenuItem();
         jmRelatoriosListagens = new javax.swing.JMenu();
         jmRelatoriosListagensUnidades = new javax.swing.JMenuItem();
         jmRelatoriosListagensMedicos = new javax.swing.JMenuItem();
@@ -140,41 +133,13 @@ public class Home extends javax.swing.JFrame {
 
         jmRelatorios.setText("Relatorios");
 
-        jmRelatoriosAgendamentos.setText("Agendamentos");
-
-        jmRelatoriosAgendamentosData.setText("Agendamentos x Data");
-        jmRelatoriosAgendamentosData.addActionListener(new java.awt.event.ActionListener() {
+        jMenuItem1.setText("Agendamentos");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jmRelatoriosAgendamentosDataActionPerformed(evt);
+                jMenuItem1ActionPerformed(evt);
             }
         });
-        jmRelatoriosAgendamentos.add(jmRelatoriosAgendamentosData);
-
-        jmRelatoriosAgendamentosClientes.setText("Agendamentos x Clientes");
-        jmRelatoriosAgendamentosClientes.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jmRelatoriosAgendamentosClientesActionPerformed(evt);
-            }
-        });
-        jmRelatoriosAgendamentos.add(jmRelatoriosAgendamentosClientes);
-
-        jmRelatoriosAgendamentosMedicos.setText("Agendamento x Medicos");
-        jmRelatoriosAgendamentosMedicos.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jmRelatoriosAgendamentosMedicosActionPerformed(evt);
-            }
-        });
-        jmRelatoriosAgendamentos.add(jmRelatoriosAgendamentosMedicos);
-
-        jmRelatoriosAgendamentosUnidades.setText("Agendamentos x Unidades");
-        jmRelatoriosAgendamentosUnidades.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jmRelatoriosAgendamentosUnidadesActionPerformed(evt);
-            }
-        });
-        jmRelatoriosAgendamentos.add(jmRelatoriosAgendamentosUnidades);
-
-        jmRelatorios.add(jmRelatoriosAgendamentos);
+        jmRelatorios.add(jMenuItem1);
 
         jmRelatoriosListagens.setText("Listagem de Espera");
 
@@ -361,26 +326,6 @@ public class Home extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_jmSairMouseClicked
 
-    private void jmRelatoriosAgendamentosDataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmRelatoriosAgendamentosDataActionPerformed
-        jfParamAgData form = new jfParamAgData();
-        form.setVisible(true);
-    }//GEN-LAST:event_jmRelatoriosAgendamentosDataActionPerformed
-
-    private void jmRelatoriosAgendamentosClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmRelatoriosAgendamentosClientesActionPerformed
-        jfParamAgClientes form = new jfParamAgClientes();
-        form.setVisible(true);
-    }//GEN-LAST:event_jmRelatoriosAgendamentosClientesActionPerformed
-
-    private void jmRelatoriosAgendamentosMedicosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmRelatoriosAgendamentosMedicosActionPerformed
-        jfParamAgMedicos form = new jfParamAgMedicos();
-        form.setVisible(true);
-    }//GEN-LAST:event_jmRelatoriosAgendamentosMedicosActionPerformed
-
-    private void jmRelatoriosAgendamentosUnidadesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmRelatoriosAgendamentosUnidadesActionPerformed
-        jfParamAgUnidades form = new jfParamAgUnidades();
-        form.setVisible(true);
-    }//GEN-LAST:event_jmRelatoriosAgendamentosUnidadesActionPerformed
-
     private void jmRelatoriosListagensUnidadesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmRelatoriosListagensUnidadesActionPerformed
         jfParamEspUnidades form = new jfParamEspUnidades();
         form.setVisible(true);
@@ -446,6 +391,11 @@ public class Home extends javax.swing.JFrame {
         form.setVisible(true);
     }//GEN-LAST:event_jmRelatoriosConveniosActionPerformed
 
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        jfParamAgendamentos form = new jfParamAgendamentos();
+        form.setVisible(true);
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -481,6 +431,7 @@ public class Home extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenu jmAgendamentos;
     private javax.swing.JMenu jmAgendamentosAgendas;
     private javax.swing.JMenuItem jmAgendamentosCentral;
@@ -491,11 +442,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JMenuItem jmCadastroClientes;
     private javax.swing.JMenu jmCadastros;
     private javax.swing.JMenu jmRelatorios;
-    private javax.swing.JMenu jmRelatoriosAgendamentos;
-    private javax.swing.JMenuItem jmRelatoriosAgendamentosClientes;
-    private javax.swing.JMenuItem jmRelatoriosAgendamentosData;
-    private javax.swing.JMenuItem jmRelatoriosAgendamentosMedicos;
-    private javax.swing.JMenuItem jmRelatoriosAgendamentosUnidades;
     private javax.swing.JMenuItem jmRelatoriosClientes;
     private javax.swing.JMenuItem jmRelatoriosConvenios;
     private javax.swing.JMenuItem jmRelatoriosEspecialidades;
