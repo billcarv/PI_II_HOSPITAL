@@ -9,12 +9,12 @@ package Parametros;
  *
  * @author willian.carvalho
  */
-public class jfParamEspMedicos extends javax.swing.JFrame {
+public class jfParamListagens extends javax.swing.JFrame {
 
     /**
      * Creates new form jfParamAgClientes
      */
-    public jfParamEspMedicos() {
+    public jfParamListagens() {
         initComponents();
     }
 
@@ -37,9 +37,9 @@ public class jfParamEspMedicos extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Parâmetros Relatório");
 
-        jLabel1.setText("Medico de  ?");
+        jLabel1.setText("Cliente de  ?");
 
-        jLabel2.setText("Medico ate ?");
+        jLabel2.setText("Cliente ate ?");
 
         jButton1.setText("Gerar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -133,18 +133,14 @@ public class jfParamEspMedicos extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(jfParamEspMedicos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(jfParamListagens.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(jfParamEspMedicos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(jfParamListagens.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(jfParamEspMedicos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(jfParamListagens.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(jfParamEspMedicos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(jfParamListagens.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -153,7 +149,7 @@ public class jfParamEspMedicos extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new jfParamEspMedicos().setVisible(true);
+                new jfParamListagens().setVisible(true);
             }
         });
     }
