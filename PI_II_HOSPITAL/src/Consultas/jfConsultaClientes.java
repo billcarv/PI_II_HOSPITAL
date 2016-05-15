@@ -5,7 +5,7 @@
  */
 package Consultas;
 
-import Cadastros.jfCadastroClientes;
+import Cadastros.InterfaceClientes;
 
 /**
  *

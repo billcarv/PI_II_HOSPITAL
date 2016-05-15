@@ -9,6 +9,7 @@ import Parametros.jfParamEspecialidades;
 import Parametros.jfParamHistClientes;
 import Parametros.jfParamListagens;
 import Parametros.jfParamRanking;
+import javax.swing.JFrame;
 
 
 /**
@@ -17,6 +18,7 @@ import Parametros.jfParamRanking;
 public class Home extends javax.swing.JFrame {
 
     public Home() {
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
         initComponents();
     }
 
@@ -27,6 +29,7 @@ public class Home extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         jmCadastros = new javax.swing.JMenu();
         jmCadastroClientes = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
         jmAgendamentos = new javax.swing.JMenu();
         jmAgendamentosMedico = new javax.swing.JMenuItem();
         jmAgendamentosCliente = new javax.swing.JMenuItem();
@@ -35,7 +38,12 @@ public class Home extends javax.swing.JFrame {
         jmAgendamentosCentral = new javax.swing.JMenuItem();
         jmAgendamentosUnidades = new javax.swing.JMenuItem();
         jmRelatorios = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
+        jmRelatoriosRankings1 = new javax.swing.JMenu();
+        jmRelatoriosRankingUnidades1 = new javax.swing.JMenuItem();
+        jmRelatoriosRankingConvenios1 = new javax.swing.JMenuItem();
+        jmRelatoriosRankingEspecialidades1 = new javax.swing.JMenuItem();
+        jmRelatoriosRankingExpedientes1 = new javax.swing.JMenuItem();
+        jmRelatoriosRankingMedicos1 = new javax.swing.JMenuItem();
         jmRelatoriosListagens = new javax.swing.JMenu();
         jmRelatoriosListagensUnidades = new javax.swing.JMenuItem();
         jmRelatoriosListagensMedicos = new javax.swing.JMenuItem();
@@ -45,12 +53,8 @@ public class Home extends javax.swing.JFrame {
         jmRelatoriosRankingEspecialidades = new javax.swing.JMenuItem();
         jmRelatoriosRankingMedicos = new javax.swing.JMenuItem();
         jmRelatoriosRankingUnidades = new javax.swing.JMenuItem();
+        jMenuItem1 = new javax.swing.JMenuItem();
         jmRelatoriosHistoricos = new javax.swing.JMenuItem();
-        jmRelatoriosClientes = new javax.swing.JMenuItem();
-        jmRelatoriosMedicos = new javax.swing.JMenuItem();
-        jmRelatoriosEspecialidades = new javax.swing.JMenuItem();
-        jmRelatoriosUnidades = new javax.swing.JMenuItem();
-        jmRelatoriosConvenios = new javax.swing.JMenuItem();
         jmSair = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -68,9 +72,12 @@ public class Home extends javax.swing.JFrame {
         });
         jmCadastros.add(jmCadastroClientes);
 
+        jMenuItem2.setText("Agendamentos");
+        jmCadastros.add(jMenuItem2);
+
         jMenuBar1.add(jmCadastros);
 
-        jmAgendamentos.setText("Agendamentos");
+        jmAgendamentos.setText("Consultas");
 
         jmAgendamentosMedico.setText("Medicos");
         jmAgendamentosMedico.addActionListener(new java.awt.event.ActionListener() {
@@ -125,17 +132,53 @@ public class Home extends javax.swing.JFrame {
 
         jmRelatorios.setText("Relatorios");
 
-        jMenuItem1.setText("Agendamentos");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        jmRelatoriosRankings1.setText("Cadastros");
+
+        jmRelatoriosRankingUnidades1.setText("Clientes");
+        jmRelatoriosRankingUnidades1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                jmRelatoriosRankingUnidades1ActionPerformed(evt);
             }
         });
-        jmRelatorios.add(jMenuItem1);
+        jmRelatoriosRankings1.add(jmRelatoriosRankingUnidades1);
+
+        jmRelatoriosRankingConvenios1.setText("Médicos");
+        jmRelatoriosRankingConvenios1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmRelatoriosRankingConvenios1ActionPerformed(evt);
+            }
+        });
+        jmRelatoriosRankings1.add(jmRelatoriosRankingConvenios1);
+
+        jmRelatoriosRankingEspecialidades1.setText("Unidades");
+        jmRelatoriosRankingEspecialidades1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmRelatoriosRankingEspecialidades1ActionPerformed(evt);
+            }
+        });
+        jmRelatoriosRankings1.add(jmRelatoriosRankingEspecialidades1);
+
+        jmRelatoriosRankingExpedientes1.setText("Especialidades");
+        jmRelatoriosRankingExpedientes1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmRelatoriosRankingExpedientes1ActionPerformed(evt);
+            }
+        });
+        jmRelatoriosRankings1.add(jmRelatoriosRankingExpedientes1);
+
+        jmRelatoriosRankingMedicos1.setText("Convênios");
+        jmRelatoriosRankingMedicos1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmRelatoriosRankingMedicos1ActionPerformed(evt);
+            }
+        });
+        jmRelatoriosRankings1.add(jmRelatoriosRankingMedicos1);
+
+        jmRelatorios.add(jmRelatoriosRankings1);
 
         jmRelatoriosListagens.setText("Listagem de Espera");
 
-        jmRelatoriosListagensUnidades.setText("Lista Espera x Unidade");
+        jmRelatoriosListagensUnidades.setText("Unidades");
         jmRelatoriosListagensUnidades.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jmRelatoriosListagensUnidadesActionPerformed(evt);
@@ -143,7 +186,7 @@ public class Home extends javax.swing.JFrame {
         });
         jmRelatoriosListagens.add(jmRelatoriosListagensUnidades);
 
-        jmRelatoriosListagensMedicos.setText("Lista Espera x Medico");
+        jmRelatoriosListagensMedicos.setText("Medico");
         jmRelatoriosListagensMedicos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jmRelatoriosListagensMedicosActionPerformed(evt);
@@ -155,7 +198,7 @@ public class Home extends javax.swing.JFrame {
 
         jmRelatoriosRankings.setText("Rankings");
 
-        jmRelatoriosRankingConvenios.setText("Ranking por Convênios");
+        jmRelatoriosRankingConvenios.setText("Convênios");
         jmRelatoriosRankingConvenios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jmRelatoriosRankingConveniosActionPerformed(evt);
@@ -163,7 +206,7 @@ public class Home extends javax.swing.JFrame {
         });
         jmRelatoriosRankings.add(jmRelatoriosRankingConvenios);
 
-        jmRelatoriosRankingExpedientes.setText("Ranking por Expedientes");
+        jmRelatoriosRankingExpedientes.setText("Expedientes");
         jmRelatoriosRankingExpedientes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jmRelatoriosRankingExpedientesActionPerformed(evt);
@@ -171,7 +214,7 @@ public class Home extends javax.swing.JFrame {
         });
         jmRelatoriosRankings.add(jmRelatoriosRankingExpedientes);
 
-        jmRelatoriosRankingEspecialidades.setText("Ranking por Especialidades");
+        jmRelatoriosRankingEspecialidades.setText("Especialidades");
         jmRelatoriosRankingEspecialidades.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jmRelatoriosRankingEspecialidadesActionPerformed(evt);
@@ -179,7 +222,7 @@ public class Home extends javax.swing.JFrame {
         });
         jmRelatoriosRankings.add(jmRelatoriosRankingEspecialidades);
 
-        jmRelatoriosRankingMedicos.setText("Ranking por Médicos");
+        jmRelatoriosRankingMedicos.setText("Médicos");
         jmRelatoriosRankingMedicos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jmRelatoriosRankingMedicosActionPerformed(evt);
@@ -187,7 +230,7 @@ public class Home extends javax.swing.JFrame {
         });
         jmRelatoriosRankings.add(jmRelatoriosRankingMedicos);
 
-        jmRelatoriosRankingUnidades.setText("Ranking por Unidade");
+        jmRelatoriosRankingUnidades.setText("Unidades");
         jmRelatoriosRankingUnidades.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jmRelatoriosRankingUnidadesActionPerformed(evt);
@@ -197,6 +240,14 @@ public class Home extends javax.swing.JFrame {
 
         jmRelatorios.add(jmRelatoriosRankings);
 
+        jMenuItem1.setText("Agendamentos");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        jmRelatorios.add(jMenuItem1);
+
         jmRelatoriosHistoricos.setText("Historico Pacientes");
         jmRelatoriosHistoricos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -204,46 +255,6 @@ public class Home extends javax.swing.JFrame {
             }
         });
         jmRelatorios.add(jmRelatoriosHistoricos);
-
-        jmRelatoriosClientes.setText("Relação de Clientes");
-        jmRelatoriosClientes.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jmRelatoriosClientesActionPerformed(evt);
-            }
-        });
-        jmRelatorios.add(jmRelatoriosClientes);
-
-        jmRelatoriosMedicos.setText("Relação de Médicos");
-        jmRelatoriosMedicos.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jmRelatoriosMedicosActionPerformed(evt);
-            }
-        });
-        jmRelatorios.add(jmRelatoriosMedicos);
-
-        jmRelatoriosEspecialidades.setText("Relação de Especialidades");
-        jmRelatoriosEspecialidades.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jmRelatoriosEspecialidadesActionPerformed(evt);
-            }
-        });
-        jmRelatorios.add(jmRelatoriosEspecialidades);
-
-        jmRelatoriosUnidades.setText("Relação de Unidades");
-        jmRelatoriosUnidades.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jmRelatoriosUnidadesActionPerformed(evt);
-            }
-        });
-        jmRelatorios.add(jmRelatoriosUnidades);
-
-        jmRelatoriosConvenios.setText("Relação de Convênios");
-        jmRelatoriosConvenios.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jmRelatoriosConveniosActionPerformed(evt);
-            }
-        });
-        jmRelatorios.add(jmRelatoriosConvenios);
 
         jMenuBar1.add(jmRelatorios);
 
@@ -350,27 +361,30 @@ public class Home extends javax.swing.JFrame {
         form.setVisible(true);
     }//GEN-LAST:event_jmRelatoriosHistoricosActionPerformed
 
-    private void jmRelatoriosClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmRelatoriosClientesActionPerformed
-        jfParamListagens form = new jfParamListagens();
-        form.setVisible(true);
-    }//GEN-LAST:event_jmRelatoriosClientesActionPerformed
-
-    private void jmRelatoriosMedicosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmRelatoriosMedicosActionPerformed
-    }//GEN-LAST:event_jmRelatoriosMedicosActionPerformed
-
-    private void jmRelatoriosEspecialidadesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmRelatoriosEspecialidadesActionPerformed
-    }//GEN-LAST:event_jmRelatoriosEspecialidadesActionPerformed
-
-    private void jmRelatoriosUnidadesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmRelatoriosUnidadesActionPerformed
-    }//GEN-LAST:event_jmRelatoriosUnidadesActionPerformed
-
-    private void jmRelatoriosConveniosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmRelatoriosConveniosActionPerformed
-    }//GEN-LAST:event_jmRelatoriosConveniosActionPerformed
-
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         jfParamAgendamentos form = new jfParamAgendamentos();
         form.setVisible(true);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jmRelatoriosRankingConvenios1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmRelatoriosRankingConvenios1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jmRelatoriosRankingConvenios1ActionPerformed
+
+    private void jmRelatoriosRankingExpedientes1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmRelatoriosRankingExpedientes1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jmRelatoriosRankingExpedientes1ActionPerformed
+
+    private void jmRelatoriosRankingEspecialidades1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmRelatoriosRankingEspecialidades1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jmRelatoriosRankingEspecialidades1ActionPerformed
+
+    private void jmRelatoriosRankingMedicos1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmRelatoriosRankingMedicos1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jmRelatoriosRankingMedicos1ActionPerformed
+
+    private void jmRelatoriosRankingUnidades1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmRelatoriosRankingUnidades1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jmRelatoriosRankingUnidades1ActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -408,6 +422,7 @@ public class Home extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenu jmAgendamentos;
     private javax.swing.JMenu jmAgendamentosAgendas;
     private javax.swing.JMenuItem jmAgendamentosCentral;
@@ -418,21 +433,22 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JMenuItem jmCadastroClientes;
     private javax.swing.JMenu jmCadastros;
     private javax.swing.JMenu jmRelatorios;
-    private javax.swing.JMenuItem jmRelatoriosClientes;
-    private javax.swing.JMenuItem jmRelatoriosConvenios;
-    private javax.swing.JMenuItem jmRelatoriosEspecialidades;
     private javax.swing.JMenuItem jmRelatoriosHistoricos;
     private javax.swing.JMenu jmRelatoriosListagens;
     private javax.swing.JMenuItem jmRelatoriosListagensMedicos;
     private javax.swing.JMenuItem jmRelatoriosListagensUnidades;
-    private javax.swing.JMenuItem jmRelatoriosMedicos;
     private javax.swing.JMenuItem jmRelatoriosRankingConvenios;
+    private javax.swing.JMenuItem jmRelatoriosRankingConvenios1;
     private javax.swing.JMenuItem jmRelatoriosRankingEspecialidades;
+    private javax.swing.JMenuItem jmRelatoriosRankingEspecialidades1;
     private javax.swing.JMenuItem jmRelatoriosRankingExpedientes;
+    private javax.swing.JMenuItem jmRelatoriosRankingExpedientes1;
     private javax.swing.JMenuItem jmRelatoriosRankingMedicos;
+    private javax.swing.JMenuItem jmRelatoriosRankingMedicos1;
     private javax.swing.JMenuItem jmRelatoriosRankingUnidades;
+    private javax.swing.JMenuItem jmRelatoriosRankingUnidades1;
     private javax.swing.JMenu jmRelatoriosRankings;
-    private javax.swing.JMenuItem jmRelatoriosUnidades;
+    private javax.swing.JMenu jmRelatoriosRankings1;
     private javax.swing.JMenu jmSair;
     // End of variables declaration//GEN-END:variables
 }

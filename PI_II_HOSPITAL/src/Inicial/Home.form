@@ -20,11 +20,16 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmCadastroClientesActionPerformed"/>
               </Events>
             </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Agendamentos"/>
+              </Properties>
+            </MenuItem>
           </SubComponents>
         </Menu>
         <Menu class="javax.swing.JMenu" name="jmAgendamentos">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Agendamentos"/>
+            <Property name="text" type="java.lang.String" value="Consultas"/>
           </Properties>
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="jmAgendamentosMedico">
@@ -82,14 +87,53 @@
             <Property name="text" type="java.lang.String" value="Relatorios"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
+            <Menu class="javax.swing.JMenu" name="jmRelatoriosRankings1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Agendamentos"/>
+                <Property name="text" type="java.lang.String" value="Cadastros"/>
               </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem1ActionPerformed"/>
-              </Events>
-            </MenuItem>
+              <SubComponents>
+                <MenuItem class="javax.swing.JMenuItem" name="jmRelatoriosRankingUnidades1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Clientes"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmRelatoriosRankingUnidades1ActionPerformed"/>
+                  </Events>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jmRelatoriosRankingConvenios1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="M&#xe9;dicos"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmRelatoriosRankingConvenios1ActionPerformed"/>
+                  </Events>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jmRelatoriosRankingEspecialidades1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Unidades"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmRelatoriosRankingEspecialidades1ActionPerformed"/>
+                  </Events>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jmRelatoriosRankingExpedientes1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Especialidades"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmRelatoriosRankingExpedientes1ActionPerformed"/>
+                  </Events>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jmRelatoriosRankingMedicos1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Conv&#xea;nios"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmRelatoriosRankingMedicos1ActionPerformed"/>
+                  </Events>
+                </MenuItem>
+              </SubComponents>
+            </Menu>
             <Menu class="javax.swing.JMenu" name="jmRelatoriosListagens">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Listagem de Espera"/>
@@ -97,7 +141,7 @@
               <SubComponents>
                 <MenuItem class="javax.swing.JMenuItem" name="jmRelatoriosListagensUnidades">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="Lista Espera x Unidade"/>
+                    <Property name="text" type="java.lang.String" value="Unidades"/>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmRelatoriosListagensUnidadesActionPerformed"/>
@@ -105,7 +149,7 @@
                 </MenuItem>
                 <MenuItem class="javax.swing.JMenuItem" name="jmRelatoriosListagensMedicos">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="Lista Espera x Medico"/>
+                    <Property name="text" type="java.lang.String" value="Medico"/>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmRelatoriosListagensMedicosActionPerformed"/>
@@ -120,7 +164,7 @@
               <SubComponents>
                 <MenuItem class="javax.swing.JMenuItem" name="jmRelatoriosRankingConvenios">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="Ranking por Conv&#xea;nios"/>
+                    <Property name="text" type="java.lang.String" value="Conv&#xea;nios"/>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmRelatoriosRankingConveniosActionPerformed"/>
@@ -128,7 +172,7 @@
                 </MenuItem>
                 <MenuItem class="javax.swing.JMenuItem" name="jmRelatoriosRankingExpedientes">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="Ranking por Expedientes"/>
+                    <Property name="text" type="java.lang.String" value="Expedientes"/>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmRelatoriosRankingExpedientesActionPerformed"/>
@@ -136,7 +180,7 @@
                 </MenuItem>
                 <MenuItem class="javax.swing.JMenuItem" name="jmRelatoriosRankingEspecialidades">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="Ranking por Especialidades"/>
+                    <Property name="text" type="java.lang.String" value="Especialidades"/>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmRelatoriosRankingEspecialidadesActionPerformed"/>
@@ -144,7 +188,7 @@
                 </MenuItem>
                 <MenuItem class="javax.swing.JMenuItem" name="jmRelatoriosRankingMedicos">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="Ranking por M&#xe9;dicos"/>
+                    <Property name="text" type="java.lang.String" value="M&#xe9;dicos"/>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmRelatoriosRankingMedicosActionPerformed"/>
@@ -152,7 +196,7 @@
                 </MenuItem>
                 <MenuItem class="javax.swing.JMenuItem" name="jmRelatoriosRankingUnidades">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="Ranking por Unidade"/>
+                    <Property name="text" type="java.lang.String" value="Unidades"/>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmRelatoriosRankingUnidadesActionPerformed"/>
@@ -160,52 +204,20 @@
                 </MenuItem>
               </SubComponents>
             </Menu>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Agendamentos"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem1ActionPerformed"/>
+              </Events>
+            </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jmRelatoriosHistoricos">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Historico Pacientes"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmRelatoriosHistoricosActionPerformed"/>
-              </Events>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jmRelatoriosClientes">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Rela&#xe7;&#xe3;o de Clientes"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmRelatoriosClientesActionPerformed"/>
-              </Events>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jmRelatoriosMedicos">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Rela&#xe7;&#xe3;o de M&#xe9;dicos"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmRelatoriosMedicosActionPerformed"/>
-              </Events>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jmRelatoriosEspecialidades">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Rela&#xe7;&#xe3;o de Especialidades"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmRelatoriosEspecialidadesActionPerformed"/>
-              </Events>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jmRelatoriosUnidades">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Rela&#xe7;&#xe3;o de Unidades"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmRelatoriosUnidadesActionPerformed"/>
-              </Events>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jmRelatoriosConvenios">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Rela&#xe7;&#xe3;o de Conv&#xea;nios"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmRelatoriosConveniosActionPerformed"/>
               </Events>
             </MenuItem>
           </SubComponents>
