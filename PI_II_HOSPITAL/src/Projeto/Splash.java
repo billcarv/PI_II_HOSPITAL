@@ -1,5 +1,5 @@
 
-package Inicial;
+package Projeto;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -45,8 +45,6 @@ public class Splash extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
-
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\willian.carvalho.GCAR-SP\\Documents\\NetBeansProjects\\PI_II_HOSPITAL\\PI_II_HOSPITAL\\PI_II_HOSPITAL\\src\\Inicial\\Logo.jpg")); // NOI18N
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel2.setText("SGA");
