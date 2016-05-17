@@ -1,5 +1,5 @@
 
-package Projeto;
+package projetohospital;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -25,7 +25,7 @@ public class Splash extends javax.swing.JFrame {
                         Logger.getLogger(Splash.class.getName()).log(Level.SEVERE, null, ex);
                     } 
                 } 
-                Home obj = new Home();
+                Projeto obj = new Projeto();
                 obj.setVisible(true);
                 hide();
             }           
