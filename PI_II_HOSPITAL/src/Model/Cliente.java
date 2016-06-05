@@ -1,36 +1,26 @@
 
-package projetohospital.model;
+package Model;
 
-import java.util.Date;
+import java.sql.Date;
 
 /**
- *
  * @author willian.carvalho
  */
-
 public class Cliente {
-  
     private Integer codigo;
     private String nome;
-    private String endereco;
-    private String bairro;
-    private String cidade;
-    private String estado;
-    private String cep;
-    private String sexo;
     private Integer telefone;
     private Integer celular;
     private Date cadastro;
     private String ativo;
     private String deletado;
-
-    
-    public Cliente(Integer codigo) {
-        this.codigo = codigo;
-    }
+    private Convenio convenioCodigo;
 
     public Cliente() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public Cliente(Integer codigo) {
+        this.codigo = codigo;
     }
 
     public Integer getCodigo() {
@@ -47,54 +37,6 @@ public class Cliente {
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    public String getEndereco() {
-        return endereco;
-    }
-
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
-    }
-
-    public String getBairro() {
-        return bairro;
-    }
-
-    public void setBairro(String bairro) {
-        this.bairro = bairro;
-    }
-
-    public String getCidade() {
-        return cidade;
-    }
-
-    public void setCidade(String cidade) {
-        this.cidade = cidade;
-    }
-
-    public String getEstado() {
-        return estado;
-    }
-
-    public void setEstado(String estado) {
-        this.estado = estado;
-    }
-
-    public String getCep() {
-        return cep;
-    }
-
-    public void setCep(String cep) {
-        this.cep = cep;
-    }
-
-    public String getSexo() {
-        return sexo;
-    }
-
-    public void setSexo(String sexo) {
-        this.sexo = sexo;
     }
 
     public Integer getTelefone() {
@@ -136,5 +78,12 @@ public class Cliente {
     public void setDeletado(String deletado) {
         this.deletado = deletado;
     }
-    
+
+    public Convenio getConvenioCodigo() {
+        return convenioCodigo;
+    }
+
+    public void setConvenioCodigo(Convenio convenioCodigo) {
+        this.convenioCodigo = convenioCodigo;
+    }
 }

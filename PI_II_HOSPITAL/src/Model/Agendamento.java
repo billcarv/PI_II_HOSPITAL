@@ -1,10 +1,9 @@
 
-package projetohospital.model;
+package Model;
 
 import java.util.Date;
 
 /**
- *
  * @author willian.carvalho
  */
 
